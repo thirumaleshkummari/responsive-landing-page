@@ -8,18 +8,30 @@ body, html {
 .navbar {
     position: fixed;
     width: 100%;
-    background: linear-gradient(90deg, #0000ff, #00ffff);
+    background: linear-gradient(90deg, #04756d, #00ffff);  
     padding: 1rem 0;
     z-index: 1000;
     transition: background 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-menu {
     display: flex;
     justify-content: center;
     list-style: none;
-    margin: 0;
+    margin-right: 30px;
     padding: 0;
+}
+
+.logo{
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 30px;
+    
+    
 }
 
 .nav-item {
@@ -47,7 +59,39 @@ section {
     min-height: 100vh;
 }
 
-#home { background-color: #f4f4f4; }
+#home { 
+    background-color: #f4f4f4; 
+    background-image: url("https://ict.io/wp-content/uploads/2017/11/la-robotique-et-le-monde.jpg");
+    height: 100vh;
+    background-size: cover;
+}
 #about { background-color: #e2e2e2; }
 #services { background-color: #d0d0d0; }
 #contact { background-color: #bfbfbf; }
+
+
+.big-title {
+    font-size: 1.4rem;
+    color: #f5efef;
+    text-transform: capitalize;
+    line-height: 1.4;
+  }
+  
+  .text {
+    color: rgb(230, 210, 210);
+    font-size: 1.1rem;
+    margin: 1.9rem 0 2.5rem;
+    max-width: 600px;
+    line-height: 2.3;
+  }
+
+  .button{
+    color: #ffffff;
+    font-size:15px;
+    padding:10px;
+    border-radius: 10px;
+    background-color: blue;
+    outline: none;
+    cursor: pointer;
+
+  }
